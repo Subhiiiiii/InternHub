@@ -1,0 +1,395 @@
+
+.employer-container{
+display: flex;
+ justify-content: space-between;
+ align-items: center;
+ font-size: 40px;
+ font-family: Arial, Helvetica, sans-serif;
+ padding: 20px 20px;
+ color: rgb(206, 16, 16); 
+}
+
+.employer-btn-container{
+    margin-top: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.employer-btn{
+    width: 200px;
+    height: 200px;
+    border: none;
+    border-radius: 100px;
+    transition: all 0.3s ease-in-out;
+}
+
+#employer-user{
+    background-color: rgb(10, 145, 145);
+    color: white;
+}
+
+#employer-dash{
+    background-color: rgb(236, 10, 85);
+    color: white;
+}
+
+.employer-btn:hover,.employer-btn:active{
+    cursor: pointer;
+    transform: scale(0.95);
+}
+
+.employer-close{
+    width: 30px;
+    height: 30px;
+    margin-left: 95em;
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+.employer-close:hover{
+    border: 1px solid gainsboro;
+    transform: scale(0.95);
+    cursor: pointer;
+}
+.employer-name{
+font-size: 60px;
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(184, 158, 12);
+}
+
+.employer-line{
+    color: rgb(180, 5, 63);
+    height: 2px;
+    width: 800px;
+}
+
+.employer-details{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.employer-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: rgb(139, 119, 1);
+}
+
+.employer.bullet ul{
+    list-style-type:georgian;
+}
+
+.employer-bullet{
+    margin-left: 30px;
+}
+
+.employer-desc{
+font-size: 30px;
+color:  rgb(76, 65, 2);
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.employer-desc ul{
+    list-style-type: disc;
+}
+
+.job-listing-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    border: 1px solid gainsboro;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 20px;
+    margin-left: 40px;
+    width: 1180px;
+    padding: 20px 20px;
+    
+}
+
+.jobTitle{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.jobDesc{
+    font-size: 20px;
+    padding: 10px 0px 10px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.jobExtra{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    color: rgb(56, 56, 56);
+}
+
+.jobExp{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+}
+
+.jobEditor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.jobBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+#jobEdit{
+    color: rgb(119, 119, 4);
+}
+#jobDelete{
+    color: rgb(253, 38, 110);
+}
+#jobDone{
+    color: rgb(38, 205, 38);
+}
+#JobCompleted{
+    opacity: 0.2;
+    background-image: url('../img/completed.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px;
+}
+
+.employer-icon{
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    color: rgb(206, 16, 16);
+    border: none;
+}
+
+.add-overlay{
+   background-color: rgba(0,0,0,0.3);
+   position: fixed; 
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   z-index: 100;
+}
+
+.add-job-container{
+    position: fixed;
+    
+    
+    top: 50%;
+   left: 50%;
+   z-index: 150;
+   width: min-content;
+   height: min-content;
+   transform: translate(-50%,-50%);
+}
+
+.add-job-contents{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.add-job-form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 5px;
+
+}
+
+.add-job-form input, .add-job-form textarea, .add-job-form button{
+    font-size: 15px;
+    padding: 5px;
+   border-radius: 15px;
+   border: 1px solid gainsboro;
+   outline-color: rgb(206, 16, 16);
+}
+
+.add-job-form button{
+    outline: none;
+    border-radius: 30px;
+    border: none;
+    background-color: paleturquoise;
+    font-size:15px;
+    color: rgb(43, 42, 42);
+    transition: all 0.3s ease-in-out;
+}
+
+.add-job-form button:hover, .add-job-form button:active{
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.employer-post{
+    margin-top: 20px;
+    border-radius: 30px;
+    width: 300px;
+    height: 50px;
+    font-size: 40px;
+    border: none;
+    background-color: paleturquoise;
+    font-size:15px;
+    color: rgb(43, 42, 42);
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 2560px){
+    .employer-container{
+        font-size: 100px;
+    }
+    .employer-btn{
+        margin-top: 70px;
+        width: 800px;
+        height: 500px;
+        border-radius: 800px;
+    }
+    .employer-name{
+        font-size: 80px;
+    }
+    .employer-line{
+        width: 100%;
+    }
+    .employer-close{
+        margin-left: 98%;
+        margin-bottom: 0px;
+    }
+    .employer-title{
+        font-size: 50px;
+    }
+    .employer-desc{
+        font-size: 40px;
+    }
+    .employer-profile-container{
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1440px){
+    .employer-container{
+        font-size: 60px;
+    }
+    .employer-btn{
+        margin-top: 0px;
+        width: 300px;
+        height: 200px;
+        border-radius: 200px;
+    }
+    .employer-btn-container{
+        margin-top: 130px;
+    }
+    .employer-name{
+        font-size: 50px;
+    }
+    .employer-line{
+        width: 100%;
+    }
+    .employer-close{
+        margin-left: 98%;
+        margin-bottom: 0px;
+    }
+    .employer-title{
+        font-size: 30px;
+    }
+    .employer-desc{
+        font-size: 20px;
+    }
+    .employer-profile-container{
+        margin-left: 20px;
+        margin-bottom: 30px;
+        margin-top: 5px;
+    }
+}
+@media (max-width:768px){
+    .employer-container{
+        gap: 550px;
+        font-size: 40px;
+    }
+    .employer-name{
+        font-size: 35px;
+    }
+    .employer-line{
+        width: 100%;
+    }
+    .employer-close{
+        margin-left: 98%;
+        margin-bottom: 0px;
+    }
+    .employer-title{
+        font-size: 30px;
+    }
+    .employer-desc{
+        font-size: 20px;
+    }
+    .employer-profile-container{
+        margin-left: 20px;
+        margin-bottom: 30px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 425px){
+    .employer-container{
+        font-size: 40px;
+        gap: 160px;
+    }
+    .employer-btn{
+        margin-top: 70px;
+        width: 150px;
+        height: 150px;
+        border-radius: 200px;
+    }
+    .employer-btn-container{
+        margin-top: 50px;
+        gap: 20px;
+    }
+    .employer-container{
+        gap: 200px;
+        font-size: 40px;
+    }
+    .employerHeader-line{
+        width: 105%;
+    }
+}
+@media (max-width: 375px){
+    .employerHeader-line{
+        width: 115%;
+    }
+    .employer-close{
+        margin-left: 100%;
+    }
+}
+@media (max-width: 320px){
+    .employerHeader-line{
+width: 450px;
+    }
+    .employer-container{
+        font-size: 40px;
+        gap: 200px;
+    }
+    .employer-btn{
+        margin-top: 70px;
+        width: 600px;
+        height: 200px;
+        border-radius: 200px;
+    }
+    .employer-btn-container{
+        margin-top: 80px;
+        gap: 40px;
+        margin-left: 130px;
+    }
+    .employer-close{
+        margin-left: 130%;
+    }
+}
